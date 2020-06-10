@@ -1,0 +1,20 @@
+{
+  "name": "posterapp",
+  "version": "1.0.0",
+  "description": "learning full stack stuff",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "author": "Brandon M. Scrushy",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
