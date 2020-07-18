@@ -31,10 +31,10 @@ router.delete('/:id', async(req, res) => {
 // Connect to Mongodb Posts Collection
 
 async function loadPostsCollection() {
-    const client = await mongodb.MongoClient.connect('mongodb+srv://brando:Kitty22@cluster0-tv4hb.azure.mongodb.net/PosterApp?retryWrites=true&w=majority', {
+    const client = await mongodb.MongoClient.connect('mongodb://localhost:27017/', {
         useNewUrlParser: true
     })
-    return client.db('PosterApp').collection('Posts')
+    return client.db('noteboard').collection('notes')
 }
 
 module.exports = router;
